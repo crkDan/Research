@@ -1,0 +1,78 @@
+body {
+    background-image: url("http://www.3danimationindia.com/wp-content/uploads/2014/05/cartoon-background-devlopment-hire.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;;
+    background-color: #00BBFF;
+    font-family: Arial,Tahoma;
+    margin: 10px;
+    padding:10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: Gotham, Tahoma, sans-serif;
+    color: darkred;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px blue;
+}
+
+
+p{
+    text-align: left;
+    font-size: 20px;
+    font-family: Tahoma;
+    color:green;
+    margin-bottom: 15px;
+
+}
+
+
+form {
+    position:absolute;
+    left: 100px;
+    top:-100px;
+    width: 400px;
+    min-height: 160px;
+    background-color: lightblue;
+    margin: 5% 25% 0%;
+    padding: 50px;
+    /*border-radius: 20px;*/
+    /*box-shadow: 10px 10px 5px #888888;*/
+}
+
+
+input[type=text], input[type=file],
+textarea,
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid red;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=radio]{
+    display      : inline-block;
+    margin-left  : 40px;
+
+}
+
+input[type=submit] {
+
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    margin: 25px ;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: green;
+}
