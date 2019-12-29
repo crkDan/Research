@@ -1,0 +1,6 @@
+echo "# Research" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/crkDan/Research.git
+git push -u origin master
