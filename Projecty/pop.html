@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+<button onclick="add()">apple</button>
+<script>
+    // Initialize Cloud Firestore through Firebase
+    firebase.initializeApp({
+        apiKey: "AIzaSyCD7ojpK8QMjhv454dGgCJv6uNfFLfXjnE",
+        authDomain: "specialstudy-crkteam.firebaseapp.com",
+        projectId: "specialstudy-crkteam"
+    });
+
+    var db = firebase.firestore();
+
+    function add() {
+        db.collection("a").doc("b").collection('c').set({
+            time: 'hi'
+        }).then(function (docRef) {
+            console.log("Ok");
+        }).catch(function (error) {
+            console.error("Error adding document: ", error);
+        });
+    }
+
+    function search() {
+        var docRef = db.collection("Employee").orderBy("id");
+
+        docRef.get().then(function (doc) {
+            let values = doc.docs.map()
+        }).catch(function (error) {
+            console.log("Error getting document:", error);
+        });
+    }
+</script>
+</body>
+</html>

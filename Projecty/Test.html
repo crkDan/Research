@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<?php
+echo "Hello World!";
+?>
+
+<script type="text/javascript" src="first.js"></script>
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.596.0.min.js"></script>
+<button onclick="bapple()"></button>
+<input type="file" id="file"/>
+<script>
+
+    // 初始化 Amazon Cognito 登入資料供應商
+    AWS.config.region = 'ap-northeast-1'; // 區域
+    AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+        IdentityPoolId: 'ap-northeast-1:6257b3f2-7b5e-4c3f-804c-fc0f470b3645',
+    });
+
+    function apple() {
+        let file = document.getElementById('file');
+        s3 = new AWS.S3;
+        var params = {Bucket: 'qwe0975279755-2', Key: 'FirstTest.png', Body: file.files[0]};
+        s3.upload(params, function (err, data) {
+            console.log(err, data);
+        });
+    }
+
+    function printCollection() {
+        let rekognition = new AWS.Rekognition();
+        var params = {};
+        rekognition.listCollections(params, function (err, data) {
+            if (err) console.log(err, err.stack); // an error occurred
+            else console.log(data);           // successful response
+            /*
+            data = {
+             CollectionIds: [
+                "myphotos"
+             ]
+            }
+            */
+        });
+    }
+
+    function addFaceToCollection() {
+        var params = {
+            CollectionId: "myphotos",
+            DetectionAttributes: [],
+            ExternalImageId: "myphotoid",
+            Image: {
+                S3Object: {
+                    Bucket: "mybucket",
+                    Name: "myphoto"
+                }
+            }
+        };
+        rekognition.indexFaces(params, function (err, data) {
+            if (err) console.log(err, err.stack); // an error occurred
+            else console.log(data);           // successful response
+        });
+    }
+</script>
+</body>
+</html>
