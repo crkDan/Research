@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>EMPLOYEEOnly_02</title>
+    <link rel="stylesheet" href="../CSS/All.css">
+
+</head>
+
+<body>
+<div class="Top_Block" style="height: 170px;"><nav>
+    <ul>
+        <li><a href="../EmployeeSetting.html">Employee Setting</a></li>
+<!--        <li><a href="DeviceSetting.html">Device Settings</a></li>-->
+        <li><a href="../SnapshotRecords.html">Snapshot Records</a></li>
+        <li><a href="../WorkSheetSetting.html">WorkSheetSetting</a></li>
+        <li><a href="../AbsentForm.html">Absent form</a></li>
+    </ul>
+</nav>
+
+
+    <input type="button" value="Save" class="Save_01" onclick="Write()">
+    <nav>
+        <ul class="Top_List_LilTitle">
+            <li><a href="DeviceAdd.html">Add Device</a></li>
+            <li><a href="DeviceSearch.html">Search</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="features-boxed"></div>
+
+<div class="input-group CompanyDevice">
+    <div class="input-group-prepend"><span class="input-group-text CompanyDevice">Company<input type="text" style="width:650px;position: absolute;
+top: -1px;height: 38px;left: 150px;" class="CompanyDeviceText" id="CompanyDeviceText" /></span>
+    </div>
+    <div class="input-group-append"></div>
+</div>
+<div class="input-group NameDevice">
+    <div class="input-group-prepend"><span class="input-group-text NameDevice">Name<input type="text" style="width:650px;position: absolute;
+top: -1px;height: 38px;left: 150px;" class="NameDeviceText" id="NameDeviceText"/></span>
+    </div>
+    <div class="input-group-append"></div>
+</div>
+<div class="input-group MacAddressDevice">
+    <div class="input-group-prepend"><span class="input-group-text MacAddressDevice">Mac Address<input type="text" style="width:650px;position: absolute;
+top: -1px;height: 38px;left: 150px;" class="MacAddressDeviceText" id="MacAddressDeviceText" /></span>
+    </div>
+    <div class="input-group-append"></div>
+</div>
+<div class="input-group IPAdressDevice">
+    <div class="input-group-prepend"><span class="input-group-text IPAdressDevice">IP Address<input type="text" style="width:650px;position: absolute;
+top: -1px;height: 38px;left: 150px;" class="IPAdressDeviceText" id="IPAdressDeviceText"/></span>
+    </div>
+    <div class="input-group-append"></div>
+</div>
+<div class="input-group PortDevice">
+    <div class="input-group-prepend"><span class="input-group-text PortDevice">&nbsp;Port<input type="text" style="width:650px;position: absolute;
+top: -1px;height: 38px;left: 150px;" class="PortDeviceText" id="PortDeviceText"/></span>
+    </div>
+    <div class="input-group-append"></div>
+</div>
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+<script src="../JavaScript/Device.js"></script>
+
+</html>

@@ -1,0 +1,1192 @@
+.Top_Block {
+    color: #fff;
+    background-color: #1e6add;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',sans-serif;
+    background: #FFFFFF;
+    font-size: 12px;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',sans-serif;
+    background: #FFFFFF;
+    font-size: 12px;
+}
+
+nav {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    background: none;
+}
+
+nav ul {
+    text-align: center;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.Save_01 {
+    position: absolute;
+    left: 1020px;
+    top: 650px;
+    border-radius: 5px;
+    border-color: #1e6add;
+    color: white;
+    background-color: #1e6add;
+}
+
+.Top_List_LilTitle {
+    position: relative;
+    top: -15px;
+}
+
+.features-boxed {
+    color: #313437;
+    background-color: #eef4f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-group.COMPANY {
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    width: 400px;
+    height: 40px;
+}
+
+.input-group-prepend {
+    margin-right: -1px;
+}
+
+.input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle), .input-group > .input-group-append:last-child > .input-group-text:not(:last-child), .input-group > .input-group-append:not(:last-child) > .btn, .input-group > .input-group-append:not(:last-child) > .input-group-text, .input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > .input-group-text {
+    width: 800px;
+    position: absolute;
+    left: -200px;
+    height: 50px;
+}
+
+.input-group-append {
+    margin-left: -1px;
+}
+.input-group-text{
+    height: 50px
+}
+
+.input-group.CompanyDevice {
+    position: absolute;
+    top: 250px;
+    left: 500px;
+    width: 400px;
+    height: 40px;
+}
+
+.input-group.NameDevice {
+    position: absolute;
+    top: 300px;
+    left: 500px;
+    width: 400px;
+    height: 40px;
+}
+
+.input-group.IPAdressDevice {
+    position: absolute;
+    top: 400px;
+    left: 500px;
+    width: 400px;
+    height: 40px;
+}
+.Name {
+    position: absolute;
+    right: 650px;
+    color: #c4d5ef;
+    font-size: 25px;
+}
+.Register_Time {
+    position: absolute;
+    left: 450px;
+    color: #c4d5ef;
+    font-size: 25px;
+}
+
+.ID {
+    position: absolute;
+    left: 300px;
+    color: #c4d5ef;
+    font-size: 25px;
+}
+
+.Image {
+    position: absolute;
+    left: 710px;
+}
+
+.input-group.WORKING {
+    position: absolute;
+    top: 600px;
+    width: 400px;
+    height: 40px;
+    left: 500px;
+}
+
+/*.features-boxed {*/
+/*    height: 100000px;*/
+/*}*/
+
+.input-group.PortDevice {
+    position: absolute;
+    left: 500px;
+    top: 450px;
+    width: 400px;
+    height: 40px;
+}
+
+.input-group.ID {
+    position: absolute;
+    top: 500px;
+    width: 400px;
+    height: 40px;
+    left: 500px;
+}
+
+.input-group.Image {
+    position: absolute;
+    top: 550px;
+    width: 400px;
+    height: 40px;
+    left: 500px;
+}
+
+select {
+    position: absolute;
+    left: 150px;
+}
+
+
+.input-group > .custom-select:not(:first-child), .input-group > .form-control:not(:first-child) {
+    position: absolute;
+    left: 136PX;
+    width: 500px;
+    top: -50px;
+}
+
+.input-group.MacAddressDevice {
+    position: absolute;
+    top: 350px;
+    left: 500px;
+    width: 400px;
+    height: 40px;
+}
+
+.Create {
+    position: absolute;
+    left: 300px;
+    top: 120px;
+}
+
+.Group {
+    position: absolute;
+    top: 207px;
+    left: 200px;
+}
+
+.SpanGroup {
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    color: #000;
+    font-size: 20px;
+}
+
+.SpanDepartment {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    color: #000;
+    font-size: 20px;
+}
+
+.Submit {
+    position: absolute;
+    top: 140px;
+    left: 200px;
+}
+
+.Data_1 {
+    position: absolute;
+    left: 200px;
+    top: 250px;
+}
+
+.Data_02 {
+    position: absolute;
+    left: 600px;
+    top: 230px;
+    border-style: solid;
+    width: 200px;
+    height: 40px;
+    background-color: #ddd;
+    border-color: #ddd;
+    color: black;
+}
+
+.Data_01 {
+    position: absolute;
+    left: 200px;
+    top: 230px;
+    border-style: solid;
+    width: 200px;
+    height: 40px;
+    background-color: #ddd;
+    border-color: #ddd;
+    color: black;
+}
+
+.Data {
+    position: absolute;
+    left: 200px;
+    top: 250px;
+}
+
+/*.Edit_01 {*/
+/*    position: absolute;*/
+/*    left: 1200px;*/
+/*    top: 255px;*/
+/*}*/
+
+/*.Edit_02 {*/
+/*    position: absolute;*/
+/*    left: 1200px;*/
+/*    top: 310px;*/
+/*}*/
+
+/*.Edit_03 {*/
+/*    position: absolute;*/
+/*    left: 1200px;*/
+/*    top: 360px;*/
+/*}*/
+
+/*.Edit_04 {*/
+/*    position: absolute;*/
+/*    left: 1200px;*/
+/*    top: 410px;*/
+/*}*/
+
+/*.Edit_05 {*/
+/*    position: absolute;*/
+/*    left: 1200px;*/
+/*    top: 460px;*/
+/*}*/
+
+/*.Edit_06 {*/
+/*    position: absolute;*/
+/*    left: 1200px;*/
+/*    top: 510px;*/
+/*}*/
+
+/*.Edit_07 {*/
+/*    position: absolute;*/
+/*    left: 1200px;*/
+/*    top: 560px;*/
+/*}*/
+
+/*.Edit_08 {*/
+/*    position: absolute;*/
+/*    left: 1200px;*/
+/*    top: 610px;*/
+/*}*/
+
+/*.Edit_09 {*/
+/*    position: absolute;*/
+/*    left: 1200px;*/
+/*    top: 665px;*/
+/*}*/
+
+/*.Edit_10 {*/
+/*    position: absolute;*/
+/*    left: 1200px;*/
+/*    top: 715px;*/
+/*}*/
+
+.Save {
+    position: absolute;
+    left: 1020px;
+    top: 650px;
+    border-radius: 5px;
+    border-color: #1e6add;
+    color: white;
+    background-color: #1e6add;
+}
+
+.Save {
+    position: absolute;
+    left: 1020px;
+    top: 800px;
+    border-radius: 5px;
+    border-color: #1e6add;
+    color: white;
+    background-color: #1e6add;
+}
+
+.Save {
+    position: absolute;
+    left: 1020px;
+    top: 800px;
+    border-radius: 5px;
+    border-color: #1e6add;
+    color: white;
+    background-color: #1e6add;
+}
+
+.switch_demo {
+    position: absolute;
+    left: 200px;
+}
+
+.Working_Time {
+    position: absolute;
+    left: 900px;
+    top: 610px;
+}
+
+.content {
+    width: 100%;
+    margin-top: 200px;
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.features-boxed .item .description {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.features-boxed .item .name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+    margin-top: 0;
+    color: inherit;
+}
+
+.features-boxed .item .box {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.features-boxed .item .icon {
+    font-size: 60px;
+    color: #1485ee;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+@media (min-width: 1025px) {
+    .features-boxed .features {
+        padding-left: 52px;
+    }
+}
+
+.features-boxed .item {
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .features-boxed .features {
+        padding-left: 52px;
+    }
+}
+
+@media (max-width:768px) {
+    .features-boxed h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .features-boxed .features {
+        padding-left: 48px;
+    }
+}
+
+.features-boxed .intro p {
+    margin-bottom: 0;
+}
+
+.features-boxed .features {
+    padding: 50px 0;
+}
+
+.features-boxed .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.features-boxed h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: inherit;
+}
+
+.features-boxed p {
+    color: #7d8285;
+}
+
+.highlight-blue {
+    color: #fff;
+    background-color: #1e6add;
+    padding: 50px 0;
+}
+
+.highlight-blue p {
+    color: #c4d5ef;
+    line-height: 1.5;
+}
+
+.highlight-blue h2 {
+    font-weight: normal;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    padding-top: 0;
+    margin-top: 0;
+    color: inherit;
+}
+
+.highlight-blue .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 25px;
+}
+
+.highlight-blue .buttons {
+    text-align: center;
+}
+
+.highlight-blue .buttons .btn {
+    padding: 16px 32px;
+    margin: 6px;
+    border: none;
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    line-height: 1;
+}
+
+.highlight-blue .buttons .btn:hover {
+    opacity: 1;
+}
+
+.highlight-blue .buttons .btn:active {
+    transform: translateY(1px);
+}
+
+.highlight-blue .buttons .btn-primary, .highlight-blue .buttons .btn-primary:active {
+    border: 2px solid rgba(255,255,255,0.7);
+    border-radius: 6px;
+    color: #ebeff1;
+    box-shadow: none;
+    text-shadow: none;
+    padding: 14px 24px;
+    background: transparent;
+    transition: background-color 0.25s;
+}
+
+h1 {
+    color: #fff;
+    margin: 30px auto;
+    display: table;
+}
+
+.upblock {
+    height: 100px;
+    width: 1100px;
+    background-color: #111;
+    float: left;
+}
+
+.center {
+    text-align: center;
+    position: absolute;
+    left: 200px;
+}
+
+.DataButton {
+    position: relative;
+    left: 200px;
+    color: #fff;
+}
+
+/*nav ul li a {*/
+/*    color: #333;*/
+/*    display: inline-block;*/
+/*    padding: 1em 3em;*/
+/*    text-decoration: none;*/
+/*    border-bottom: 2px solid #fff;*/
+/*    transition-property: all .2s linear 0s;*/
+/*    -moz-transition: all .2s linear 0s;*/
+/*    -webkit-transition: all .2s linear 0s;*/
+/*    -o-transition: all .2s linear 0s;*/
+/*    font-size: 16px;*/
+/*}*/
+
+.Edit {
+    position: absolute;
+    left: 700px;
+}
+
+.Delete {
+    position: absolute;
+    left: 750px;
+}
+
+.input-group.Title {
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    width: 400px;
+    height: 40px;
+}
+
+.input-group.Content {
+    position: absolute;
+    top: 250px;
+    left: 500px;
+    width: 400px;
+    height: 40px;
+}
+
+.input-group.Content_01 {
+    position: absolute;
+    top: 250px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+
+.input-group.Content_02 {
+    position: absolute;
+    top: 310px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+
+.input-group.Content_03 {
+    position: absolute;
+    top: 370px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+
+.input-group.Content_04 {
+    position: absolute;
+    top: 430px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+
+.input-group.Content_05 {
+    position: absolute;
+    top: 490px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+
+.input-group.Content_06 {
+    position: absolute;
+    top: 550px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+
+.input-group.Content_07 {
+    position: absolute;
+    top: 610px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+
+.input-group.Content_08 {
+    position: absolute;
+    top: 670px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+
+.input-group.Content_09 {
+    position: absolute;
+    top: 730px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+
+.input-group.Content_10 {
+    position: absolute;
+    top: 790px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_11 {
+    position: absolute;
+    top: 850px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_12 {
+    position: absolute;
+    top: 910px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_13 {
+    position: absolute;
+    top: 970px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_14 {
+    position: absolute;
+    top: 1030px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_15 {
+    position: absolute;
+    top: 1090px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_16 {
+    position: absolute;
+    top: 1150px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_17 {
+    position: absolute;
+    top: 1210px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_18 {
+    position: absolute;
+    top: 1270px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_19 {
+    position: absolute;
+    top: 1330px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_20 {
+    position: absolute;
+    top: 1390px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_21 {
+    position: absolute;
+    top: 1450px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_22 {
+    position: absolute;
+    top: 1510px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_23 {
+    position: absolute;
+    top: 1560px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_24 {
+    position: absolute;
+    top: 1620px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_25 {
+    position: absolute;
+    top: 1680px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_26 {
+    position: absolute;
+    top: 1740px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_27 {
+    position: absolute;
+    top: 1800px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_28 {
+    position: absolute;
+    top: 1860px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_29 {
+    position: absolute;
+    top: 1920px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_30 {
+    position: absolute;
+    top: 1980px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_31 {
+    position: absolute;
+    top: 2040px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_32 {
+    position: absolute;
+    top: 2100px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_33 {
+    position: absolute;
+    top: 2160px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_34 {
+    position: absolute;
+    top: 2210px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_35 {
+    position: absolute;
+    top: 2270px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_36 {
+    position: absolute;
+    top: 2330px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_37 {
+    position: absolute;
+    top: 2390px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_38 {
+    position: absolute;
+    top: 2450px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_39 {
+    position: absolute;
+    top: 2510px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_40 {
+    position: absolute;
+    top: 2570px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_41 {
+    position: absolute;
+    top: 2630px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_42 {
+    position: absolute;
+    top: 2690px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_43 {
+    position: absolute;
+    top: 2750px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_44 {
+    position: absolute;
+    top: 2810px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_45 {
+    position: absolute;
+    top: 2870px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_46 {
+    position: absolute;
+    top: 2930px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_47 {
+    position: absolute;
+    top: 2990px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_48 {
+    position: absolute;
+    top: 3050px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_49 {
+    position: absolute;
+    top: 3110px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+.input-group.Content_50 {
+    position: absolute;
+    top: 3170px;
+    left: 700px;
+    width: 400px;
+    height: 40px;
+}
+
+.Department {
+    position: absolute;
+    top: 105px;
+    left: 200px;
+}
+
+.input-group.DeviceType {
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    width: 400px;
+    height: 40px;
+}
+
+.MacAddress {
+    position: absolute;
+    left: 200px;
+}
+
+.IP {
+    position: absolute;
+    left: 400px;
+}
+
+.SpanCompany {
+    position: absolute;
+    left: 100px;
+    top: 175px;
+    color: #000;
+    font-size: 20px;
+}
+
+.CapturesTime {
+    position: absolute;
+    left: 200px;
+}
+
+.AddWorkSheet {
+    position: absolute;
+    left: 700px;
+}
+
+.DATE_Table {
+    width: 800px;
+    position: absolute;
+    left: 400px;
+}
+
+.DATE_Table_01 {
+    width: 800px;
+    position: absolute;
+    left: 400px;
+}
+
+.DATE_Table_02 {
+    width: 800px;
+    position: absolute;
+    left: 400px;
+    top: 260px;
+}
+
+.WorkSheetsSave {
+    position: absolute;
+    left: 1080px;
+    top: 400px;
+    border-radius: 5px;
+    border-color: #1e6add;
+    color: white;
+    background-color: #1e6add;
+}
+
+.Status {
+    position: absolute;
+    left: 570px;
+}
+.Status_AbsentForm {
+    position: absolute;
+    left: 600px;
+}
+.input-group.Absent_Name {
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    width: 400px;
+    height: 40px;
+}
+
+.input-group.Absent_DEPARTMENT {
+    position: absolute;
+    top: 250px;
+    left: 500px;
+    width: 400px;
+    height: 40px;
+}
+
+.input-group.Absent_ID {
+    position: absolute;
+    top: 300px;
+    left: 500px;
+    width: 400px;
+    height: 40px;
+}
+
+.input-group.Absent_Sex {
+    position: absolute;
+    left: 500px;
+    top: 400px;
+    width: 400px;
+    height: 40px;
+}
+
+.input-group.Absent_Job {
+    position: absolute;
+    top: 350px;
+    width: 400px;
+    height: 40px;
+    left: 500px;
+}
+
+.input-group.Absent_Type {
+    position: absolute;
+    top: 450px;
+    width: 400px;
+    height: 40px;
+    left: 500px;
+}
+
+.Absent_Type_Select {
+    position: absolute;
+    left: -150px;
+}
+
+.Save_Absent_01 {
+    position: absolute;
+    left: 1020px;
+    top: 530px;
+    border-radius: 5px;
+    border-color: #1e6add;
+    color: white;
+    background-color: #1e6add;
+}
+.Save_Absent_02 {
+    position: absolute;
+    left: 1340px;
+    top: 200px;
+    border-radius: 5px;
+    border-color: #1e6add;
+    color: white;
+    background-color: #1e6add;
+}
+.TopText {
+    position: absolute;
+    top: 1170px;
+    left: 500px;
+}
+.TopNameTitle {
+    position: absolute;
+    top: -970px;
+    left: 100px;
+    font-size: 15px;
+}
+.SearchDate {
+    position: absolute;
+    top: -970px;
+    left: -300px;
+    font-size: 15px;
+}
+.TopRegisterTitle {
+    position: absolute;
+    top: -970px;
+    left: 500px;
+    font-size: 15px;
+}
+.TopWorkingTimeTitle {
+    position: absolute;
+    top: -970px;
+    left: 500px;
+    font-size: 15px;
+}
+.TopIDTitle {
+    position: absolute;
+    top: -970px;
+    left: 330px;
+    font-size: 15px;
+}
+.TopStatusTitle {
+    position: absolute;
+    top: -970px;
+    left: 570px;
+    font-size: 15px;
+}
+.TopTypeTitle {
+    position: absolute;
+    top: -970px;
+    left: 695px;
+    font-size: 15px;
+}
+.TopCapturesTimeTitle {
+    position: absolute;
+    top: -970px;
+    left: 285px;
+    font-size: 15px;
+}
+.TopImageTitle {
+    position: absolute;
+    top: -970px;
+    left: -100px;
+    font-size: 15px;
+
+}
+.EmpImageSrc {
+    position: absolute;
+    right: 750px;
+    color: #c4d5ef;
+    font-size: 25px;
+}
+.ImageSrc {
+    position: absolute;
+    right: 750px;
+    color: #c4d5ef;
+    font-size: 25px;
+}
+.TopWorkingStatusTitle {
+    position: absolute;
+    top: -970px;
+    left: 800px;
+    font-size: 15px;
+}
+.WorkingStatus {
+    position: absolute;
+    left: 820px;
+}
+.WorkingRegister_Time{
+    position: absolute;
+    left: 550px;
+    color: #c4d5ef;
+    font-size: 25px;
+}
