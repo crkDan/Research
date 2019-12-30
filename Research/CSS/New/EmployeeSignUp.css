@@ -1,5 +1,4 @@
 body {
-    background-image: url("http://www.3danimationindia.com/wp-content/uploads/2014/05/cartoon-background-devlopment-hire.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;;
@@ -8,17 +7,18 @@ body {
     margin: 10px;
     padding:10px;
 }
+/*h1 {*/
+/*    text-align: center;*/
+/*    font-size: 40px;*/
+/*    font-family: Gotham, Tahoma, sans-serif;*/
+/*    color: darkred;*/
+/*    margin-bottom: 30px;*/
+/*    text-shadow: 2px 2px blue;*/
+/*}*/
 
-h1 {
-    text-align: center;
-    font-size: 40px;
-    font-family: Gotham, Tahoma, sans-serif;
-    color: darkred;
-    margin-bottom: 30px;
-    text-shadow: 2px 2px blue;
-}
-
-
+/*.SignUpTable{*/
+/*    position: absolute;*/
+/*}*/
 p{
     text-align: left;
     font-size: 20px;
@@ -27,13 +27,18 @@ p{
     margin-bottom: 15px;
 
 }
-
+.SignUpTable{
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
 
 form {
+    width: 900px;
+    height: 800px;
     position:absolute;
-    left: 100px;
+    left: -100px;
     top:-100px;
-    width: 400px;
     min-height: 160px;
     background-color: lightblue;
     margin: 5% 25% 0%;
@@ -61,8 +66,7 @@ input[type=radio]{
 
 }
 
-input[type=submit] {
-
+.SignUp{
     background-color: #4CAF50;
     color: white;
     padding: 15px 25px;
@@ -70,9 +74,4 @@ input[type=submit] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-
-input[type=submit]:hover {
-    background-color: green;
 }

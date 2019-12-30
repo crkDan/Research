@@ -111,15 +111,15 @@ a {
     background: #c42f2f;
 }
 
-/*.form-wrapper button:before {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    border-width: 8px 8px 8px 0;*/
-/*    border-style: solid solid solid none;*/
-/*    border-color: transparent #d83c3c transparent;*/
-/*    top: 12px;*/
-/*    left: -6px;*/
-/*}*/
+.form-wrapper button:before {
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #d83c3c transparent;
+    top: 12px;
+    left: -6px;
+}
 
 .form-wrapper button:hover:before {
     border-right-color: #e54040;
@@ -133,6 +133,8 @@ a {
     border: 0;
     padding: 0;
 }
+/*---------------------------------*/
+
 
 .byline p {
     text-align: center;

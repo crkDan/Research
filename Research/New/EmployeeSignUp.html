@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<title>EmployeeSignUp</title>
+<head>
+
+
+    <link rel="stylesheet" href="../CSS/New/EmployeeSignUp.css">
+    <link rel="stylesheet" href="../CSS/New/DropDownMenu.css">
+</head>
+<body>
+
+
+<form>
+    <nav class="Dropdown_Menu_01">
+        <ul>
+            <li><a href="EmployeeSignUp.html">EmployeeSignUp</a></li>
+            <li><a href="EmployeeDataSearch.html">EmployeeSearch</a></li>
+            <li><a href="SnapshotRecords.html">SnapshotRecords</a>
+                <ul id="submenu">
+                    <li><a href="#">WorkingRecords</a></li>
+                </ul>
+            </li>
+            <li><a href="#">AbsentsForm</a></li>
+            <li><a href="#">WorkingStatusSearch</a></li>
+        </ul>
+    </nav>
+    <table class="SignUpTable">
+
+
+        <tr>
+            <td>
+                <p> Name :</p>
+            </td>
+
+            <td>
+                <input type="text" name="Name" class="employeeName">
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                <p>ID:</p>
+            </td>
+            <td>
+                <input type="text" name="ID" class="employeeId">
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                <p>Gender:</p>
+            </td>
+            <td>
+
+                <input type="radio" name="gender" value="male" class="employeeSex">
+                Male
+                <input type="radio" name="gender" value="female" class="employeeSex">
+                Female
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                <p>Department:</p>
+            </td>
+            <td>
+                <select class="employeeDepartment">
+                    <option>RD</option>
+                    <option>Sale</option>
+                </select>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                <p>Working Hour:</p>
+            </td>
+            <td>
+                <select class="employeeWorkingType">
+                    <option>Day: 09:00~16:00</option>
+                    <option>Night: 17:00~23:00</option>
+                </select>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                <p>File:</p>
+            </td>
+            <td>
+                <input type="file" value="file">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input button="submit" value="SIGN UP" class="SignUp" onclick="signUp()">
+
+            </td>
+        </tr>
+
+    </table>
+</form>
+</body>
+</html>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+<script>
+
+    var names = document.getElementsByClassName("employeeName");
+    var ids = document.getElementsByClassName("employeeId");
+    var sexes = document.getElementsByName("gender");
+    var employeeDepartments = document.getElementsByClassName("employeeDepartment");
+    var employeeWorkingTypes = document.getElementsByClassName("employeeWorkingType");
+
+
+    var firebaseConfig = {
+        apiKey: "AIzaSyCD7ojpK8QMjhv454dGgCJv6uNfFLfXjnE",
+        authDomain: "specialstudy-crkteam.firebaseapp.com",
+        databaseURL: "https://specialstudy-crkteam.firebaseio.com",
+        projectId: "specialstudy-crkteam",
+        storageBucket: "specialstudy-crkteam.appspot.com",
+        messagingSenderId: "1020739373175",
+        appId: "1:1020739373175:web:07a99058ea6d80ec7c1e72",
+        measurementId: "G-4VW0XTMFD5"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    var db = firebase.database();
+
+    function signUp() {
+        var bufferSex = "";
+        var bufferNames = names[0].value;
+        var bufferId = ids[0].value;
+
+        if (bufferNames === "") {
+            alert("Name not entered");
+            return;
+        }
+        if (bufferId === "") {
+            alert("ID not entered");
+            return;
+        }
+
+        for (let i = 0; i < sexes.length; i++) {
+            if (sexes[i].checked === true) {
+                bufferSex = sexes[i].value;
+            }
+        }
+        if (bufferSex === "") {
+            alert("Sex not entered");
+            return;
+        }
+
+        db.ref('/Employee/' + ids[0].value).update({
+
+            Department: employeeDepartments[0].value,
+            Id: bufferId,
+            Name: bufferNames,
+            Sex: bufferSex,
+            WorkingType: employeeWorkingTypes[0].selectedIndex
+        })
+    }
+</script>

@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="CSS/EmployeeSearchView.css">
-<link rel="stylesheet" href="CSS/DropDownMenu.css">
-<script src="JavaScript/ReloadTableSize.js"></script>
+<link rel="stylesheet" href="../CSS/New/SnapshotRecords.css">
+<link rel="stylesheet" href="../CSS/New/DropDownMenu.css">
+<script src="../JavaScript/ReloadTableSize.js"></script>
 
 <nav class="dropdownmenu">
     <ul>
         <li><a href="EmployeeSignUp.html">EmployeeSignUp</a></li>
-        <li><a href="EmployeeSearch.html">EmployeeSearch</a></li>
-        <li><a href="SnapshotRecords.html">SnapshotRecords</a></li>
+        <li><a href="EmployeeDataSearch.html">EmployeeSearch</a></li>
+        <li><a href="SnapshotRecords.html">SnapshotRecords</a>
+            <ul id="submenu">
+                <li><a href="#">WorkingRecords</a></li>
+            </ul>
+        </li>
         <li><a href="#">AbsentsForm</a></li>
-        <li><a href="http://www.jochaho.com/wordpress/about-pritesh-badge/">Contact Us</a></li>
+        <li><a href="#">WorkingStatusSearch</a></li>
     </ul>
 </nav>
 <section>
     <!--for demo wrap-->
-    <h1>Search Result</h1>
+    <h1>Snapshot Records</h1>
     <div class="tbl-header">
         <table cellpadding="0" cellspacing="0" border="0">
             <thead>
@@ -23,7 +27,7 @@
                 <th>ID</th>
                 <th>Gender</th>
                 <th>Department</th>
-                <th>Working Type</th>
+                <th>Snapshot Records</th>
             </tr>
             </thead>
         </table>
@@ -36,7 +40,7 @@
                 <td>05133065</td>
                 <td>Pussy</td>
                 <td>Sales</td>
-                <td>Day: 09:00~16:00</td>
+                <td>AM: 9:05</td>
             </tr>
             <tr>
                 <td>AAD</td>
@@ -266,4 +270,3 @@
         </table>
     </div>
 </section>
-

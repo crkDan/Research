@@ -1,10 +1,9 @@
 
 .dropdownmenu{
     position: absolute;
-    top: 10px;
-    left: 470px;
+    top: 20px;
+    left: 430px;
 }
-
 .dropdownmenu ul, .dropdownmenu li {
     margin: 0;
     padding: 0;
@@ -33,7 +32,48 @@
     -o-transition: all .25s ease;
     transition: all .25s ease;
 }
+
 .dropdownmenu li:hover a {
+    background: #000000;
+}
+
+
+
+.Dropdown_Menu_01{
+    position: absolute;
+    top: 50px;
+    left: 120px;
+}
+
+.Dropdown_Menu_01 ul, .Dropdown_Menu_01 li {
+    margin: 0;
+    padding: 0;
+}
+.Dropdown_Menu_01 ul {
+    background: gray;
+    list-style: none;
+    width: 100%;
+}
+.Dropdown_Menu_01 li {
+    float: left;
+    position: relative;
+    width:auto;
+}
+.Dropdown_Menu_01 a {
+    background: #30A6E6;
+    color: #FFFFFF;
+    display: block;
+    font: bold 12px/20px sans-serif;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+.Dropdown_Menu_01 li:hover a {
     background: #000000;
 }
 #submenu {
