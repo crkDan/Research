@@ -17,30 +17,29 @@
 </nav>
 <form class="form-wrapper cf">
 <!--    <div class="Input_01"><input type="text" ></div>-->
-    <div class="Input_02"><input type="text" ></div>
+    <div class="Input_02"><input type="text" class = "Ids"></div>
 <!--    placeholder="Search here..." required-->
 
-    <select class="gender">
-        <option>Male</option>
-        <option>Female</option>
-    </select>
+<!--    <select class="gender">-->
+<!--        <option>Male</option>-->
+<!--        <option>Female</option>-->
+<!--    </select>-->
 
-    <select class="department">
-        <option>RD</option>
-        <option>Sales</option>
-    </select>
+<!--    <select class="department">-->
+<!--        <option>RD</option>-->
+<!--        <option>Sales</option>-->
+<!--    </select>-->
 
-    <select class="workingHours">
-        <option>Day: 09:00~16:00</option>
-        <option>Night: 17:00~23:00</option>
-    </select>
+<!--    <select class="workingHours">-->
+<!--        <option>Day: 09:00~16:00</option>-->
+<!--        <option>Night: 17:00~23:00</option>-->
+<!--    </select>-->
 
     <select class="leave">
         <option>Sick leave</option>
         <option>Personal leave</option>
     </select>
-
-    <button class="SendAbsentForm" onclick="">SEND</button>
+    <button class="SendAbsentForm" onclick="button()">SEND</button>
 </form>
 <div class="byline"></div>
 <!--<text class="Name_text">Name :</text>-->
@@ -49,3 +48,39 @@
 <text class="Department_text">Department :</text>
 <text class="WorkingHours_text">Working Hours :</text>
 <text class="leave_text">Type :</text>
+
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+<script>
+
+    var firebaseConfig = {
+        apiKey: "AIzaSyCD7ojpK8QMjhv454dGgCJv6uNfFLfXjnE",
+        authDomain: "specialstudy-crkteam.firebaseapp.com",
+        databaseURL: "https://specialstudy-crkteam.firebaseio.com",
+        projectId: "specialstudy-crkteam",
+        storageBucket: "specialstudy-crkteam.appspot.com",
+        messagingSenderId: "1020739373175",
+        appId: "1:1020739373175:web:07a99058ea6d80ec7c1e72",
+        measurementId: "G-4VW0XTMFD5"
+    };
+    var date = "2019-12-31";
+    function button() {
+        var leaveSelect = document.getElementsByClassName("leave")[0].value;
+        var ids = document.getElementsByClassName("Ids")[0].value;
+
+        // firebase.database().ref('/Status/' + date).once('value').then(function (snapshot) {
+        //     snapshot.forEach(function (item) {
+        //         console.log(item.key);
+        //         if (item.key===ids){
+        //             firebase.database().ref('/Status/' + date+"/"+ids).update(-1);
+        //         }
+        //     });
+        // });
+    }
+
+
+
+
+
+</script>

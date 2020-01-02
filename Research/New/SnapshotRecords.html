@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="../CSS/New/SnapshotRecords.css">
 <link rel="stylesheet" href="../CSS/New/DropDownMenu.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="../JavaScript/ReloadTableSize.js"></script>
 
 <nav class="dropdownmenu">
@@ -8,9 +9,9 @@
         <li><a href="EmployeeSignUp.html">EmployeeSignUp</a></li>
         <li><a href="EmployeeSearchView.html">EmployeeSearch</a></li>
         <li><a href="SnapshotRecords.html">SnapshotRecords</a>
-<!--            <ul id="submenu">-->
-<!--                <li><a href="#">WorkingRecords</a></li>-->
-<!--            </ul>-->
+            <!--            <ul id="submenu">-->
+            <!--                <li><a href="#">WorkingRecords</a></li>-->
+            <!--            </ul>-->
         </li>
         <li><a href="AbsentForm.html">AbsentsForm</a></li>
         <li><a href="WorkingStatus.html">WorkingStatus</a></li>
@@ -49,7 +50,7 @@
         <table cellpadding="0" cellspacing="0" border="0">
             <thead>
             <tr>
-                <th>Data</th>
+                <th>Date</th>
                 <th>Time</th>
                 <th>ID</th>
                 <th>Similarity</th>
@@ -59,7 +60,7 @@
     </div>
     <div class="tbl-content">
         <table cellpadding="0" cellspacing="0" border="0">
-            <tbody>
+            <tbody class="tb">
             <tr>
                 <td>5555</td>
                 <td>2222</td>
@@ -90,203 +91,341 @@
                 <td></td>
                 <td></td>
             </tr>
-<!--            <tr>-->
-<!--                <td>AAD</td>-->
-<!--                <td>AUSENCO</td>-->
-<!--                <td>$2.38</td>-->
-<!--                <td>-0.01</td>-->
-<!--                <td>-1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAX</td>-->
-<!--                <td>ADELAIDE</td>-->
-<!--                <td>$3.22</td>-->
-<!--                <td>+0.01</td>-->
-<!--                <td>+1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>XXD</td>-->
-<!--                <td>ADITYA BIRLA</td>-->
-<!--                <td>$1.02</td>-->
-<!--                <td>-1.01</td>-->
-<!--                <td>+2.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAC</td>-->
-<!--                <td>AUSTRALIAN COMPANY </td>-->
-<!--                <td>$1.38</td>-->
-<!--                <td>+2.01</td>-->
-<!--                <td>-0.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAD</td>-->
-<!--                <td>AUSENCO</td>-->
-<!--                <td>$2.38</td>-->
-<!--                <td>-0.01</td>-->
-<!--                <td>-1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAX</td>-->
-<!--                <td>ADELAIDE</td>-->
-<!--                <td>$3.22</td>-->
-<!--                <td>+0.01</td>-->
-<!--                <td>+1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>XXD</td>-->
-<!--                <td>ADITYA BIRLA</td>-->
-<!--                <td>$1.02</td>-->
-<!--                <td>-1.01</td>-->
-<!--                <td>+2.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAC</td>-->
-<!--                <td>AUSTRALIAN COMPANY </td>-->
-<!--                <td>$1.38</td>-->
-<!--                <td>+2.01</td>-->
-<!--                <td>-0.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAD</td>-->
-<!--                <td>AUSENCO</td>-->
-<!--                <td>$2.38</td>-->
-<!--                <td>-0.01</td>-->
-<!--                <td>-1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAX</td>-->
-<!--                <td>ADELAIDE</td>-->
-<!--                <td>$3.22</td>-->
-<!--                <td>+0.01</td>-->
-<!--                <td>+1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>XXD</td>-->
-<!--                <td>ADITYA BIRLA</td>-->
-<!--                <td>$1.02</td>-->
-<!--                <td>-1.01</td>-->
-<!--                <td>+2.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAC</td>-->
-<!--                <td>AUSTRALIAN COMPANY </td>-->
-<!--                <td>$1.38</td>-->
-<!--                <td>+2.01</td>-->
-<!--                <td>-0.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAD</td>-->
-<!--                <td>AUSENCO</td>-->
-<!--                <td>$2.38</td>-->
-<!--                <td>-0.01</td>-->
-<!--                <td>-1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAX</td>-->
-<!--                <td>ADELAIDE</td>-->
-<!--                <td>$3.22</td>-->
-<!--                <td>+0.01</td>-->
-<!--                <td>+1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>XXD</td>-->
-<!--                <td>ADITYA BIRLA</td>-->
-<!--                <td>$1.02</td>-->
-<!--                <td>-1.01</td>-->
-<!--                <td>+2.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAC</td>-->
-<!--                <td>AUSTRALIAN COMPANY </td>-->
-<!--                <td>$1.38</td>-->
-<!--                <td>+2.01</td>-->
-<!--                <td>-0.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAD</td>-->
-<!--                <td>AUSENCO</td>-->
-<!--                <td>$2.38</td>-->
-<!--                <td>-0.01</td>-->
-<!--                <td>-1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAX</td>-->
-<!--                <td>ADELAIDE</td>-->
-<!--                <td>$3.22</td>-->
-<!--                <td>+0.01</td>-->
-<!--                <td>+1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>XXD</td>-->
-<!--                <td>ADITYA BIRLA</td>-->
-<!--                <td>$1.02</td>-->
-<!--                <td>-1.01</td>-->
-<!--                <td>+2.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAC</td>-->
-<!--                <td>AUSTRALIAN COMPANY </td>-->
-<!--                <td>$1.38</td>-->
-<!--                <td>+2.01</td>-->
-<!--                <td>-0.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAD</td>-->
-<!--                <td>AUSENCO</td>-->
-<!--                <td>$2.38</td>-->
-<!--                <td>-0.01</td>-->
-<!--                <td>-1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAX</td>-->
-<!--                <td>ADELAIDE</td>-->
-<!--                <td>$3.22</td>-->
-<!--                <td>+0.01</td>-->
-<!--                <td>+1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>XXD</td>-->
-<!--                <td>ADITYA BIRLA</td>-->
-<!--                <td>$1.02</td>-->
-<!--                <td>-1.01</td>-->
-<!--                <td>+2.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAC</td>-->
-<!--                <td>AUSTRALIAN COMPANY </td>-->
-<!--                <td>$1.38</td>-->
-<!--                <td>+2.01</td>-->
-<!--                <td>-0.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAD</td>-->
-<!--                <td>AUSENCO</td>-->
-<!--                <td>$2.38</td>-->
-<!--                <td>-0.01</td>-->
-<!--                <td>-1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAX</td>-->
-<!--                <td>ADELAIDE</td>-->
-<!--                <td>$3.22</td>-->
-<!--                <td>+0.01</td>-->
-<!--                <td>+1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>XXD</td>-->
-<!--                <td>ADITYA BIRLA</td>-->
-<!--                <td>$1.02</td>-->
-<!--                <td>-1.01</td>-->
-<!--                <td>+2.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>Danny</td>-->
-<!--                <td>05133065</td>-->
-<!--                <td>Pussy</td>-->
-<!--                <td>Sales</td>-->
-<!--                <td>Day: 09:00~16:00</td>-->
-<!--            </tr>-->
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
             </tbody>
         </table>
     </div>
 </section>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyCD7ojpK8QMjhv454dGgCJv6uNfFLfXjnE",
+        authDomain: "specialstudy-crkteam.firebaseapp.com",
+        databaseURL: "https://specialstudy-crkteam.firebaseio.com",
+        projectId: "specialstudy-crkteam",
+        storageBucket: "specialstudy-crkteam.appspot.com",
+        messagingSenderId: "1020739373175",
+        appId: "1:1020739373175:web:07a99058ea6d80ec7c1e72",
+        measurementId: "G-4VW0XTMFD5"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    var db = firebase.database();
+    var date = '2019-12-31';//測試當天要改
+    var times = [];
+    var ids = [];
+    var similaritys = [];
+    var table = document.getElementsByClassName("tb")[0]; //53格
+    var count = 0;
+
+    firebase.database().ref('/Record/' + date).once('value').then(function (snapshot) {
+        snapshot.forEach(function (element) {
+            times.push(element.key);
+            ids.push(element.child("Id").val());
+            similaritys.push(element.child("Similarity").val());
+
+        });
+        times = times.reverse();
+        ids = ids.reverse();
+        similaritys = similaritys.reverse();
+
+        for (var i = 0; i < times.length; i++) {
+            var trNode = table.getElementsByTagName("tr")[i];
+            trNode.getElementsByTagName("td")[0].innerHTML = date;
+            trNode.getElementsByTagName("td")[1].innerHTML = times[i];
+            trNode.getElementsByTagName("td")[2].innerHTML = ids[i];
+            trNode.getElementsByTagName("td")[3].innerHTML = similaritys[i];
+        }
+    });
+
+
+</script>

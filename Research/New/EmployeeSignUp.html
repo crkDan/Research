@@ -133,7 +133,7 @@
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     var db = firebase.database();
-
+    var date = "2019-12-31";
     function signUp() {
         var bufferSex = "";
         var bufferNames = names[0].value;
@@ -165,6 +165,7 @@
             Name: bufferNames,
             Sex: bufferSex,
             WorkingType: employeeWorkingTypes[0].selectedIndex
-        })
+        });
+        db.ref('/Status/'+date+"/"+bufferId).set(0);
     }
 </script>
