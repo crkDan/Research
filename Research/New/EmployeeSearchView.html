@@ -1,46 +1,57 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="../CSS/New/EmployeeSearchView.css">
 <link rel="stylesheet" href="../CSS/New/DropDownMenu.css">
-<script src="../JavaScript/ReloadTableSize.js"></script>
+<!--<script src="JavaScript/ReloadTableSize.js"></script>-->
 
 <nav class="dropdownmenu">
     <ul>
         <li><a href="EmployeeSignUp.html">EmployeeSignUp</a></li>
         <li><a href="EmployeeSearchView.html">EmployeeSearch</a></li>
         <li><a href="SnapshotRecords.html">SnapshotRecords</a>
-            <ul id="submenu">
-                <li><a href="#">WorkingRecords</a></li>
-            </ul>
+<!--            <ul id="submenu">-->
+<!--                <li><a href="#">WorkingRecords</a></li>-->
+<!--            </ul>-->
         </li>
         <li><a href="AbsentForm.html">AbsentsForm</a></li>
         <li><a href="WorkingStatus.html">WorkingStatus</a></li>
     </ul>
 </nav>
 <div class="SearchList">
+<<<<<<< HEAD
 <!--    <Text class="Name_text">Name:</Text>-->
 <!--    <div class="Input_01"><input type="text" ></div>-->
+<!--    <Text class="ID_text">ID:</Text>-->
+<!--    <div class="Input_02"><input type="text" ></div>-->
+=======
+    <!--    <Text class="Name_text">Name:</Text>-->
+    <!--    <div class="Input_01"><input type="text" ></div>-->
     <Text class="ID_text">ID:</Text>
-    <div class="Input_02"><input type="text" ></div>
+    <div class="Input_02"><input type="text"></div>
+>>>>>>> 15ebeb9f2a16fc823ad38bc3c98468c4afd87b3e
 
-    <Text class="Gender_text">Gender:</Text>
-    <select class="gender">
+    <Text class="Sexes_text">Gender:</Text>
+    <select class="sexesSelect">
+        <option></option>
         <option>Male</option>
         <option>Female</option>
+
     </select>
 
     <Text class="Department_text">Department:</Text>
-    <select class="department">
+    <select class="departmentSelect">
+        <option></option>
         <option>RD</option>
         <option>Sales</option>
     </select>
 
     <Text class="WorkingHours_text">WorkingHours:</Text>
-    <select class="workingHours">
+    <select class="workingHoursSelect">
+        <option></option>
         <option>Day: 09:00~16:00</option>
         <option>Night: 17:00~23:00</option>
     </select>
 
-    <input type="button" value="Search" class="EmpSearch" onclick="">
+    <input type="button" value="Search" class="EmpSearch" onclick=search()>
 </div>
 <section>
     <!--for demo wrap-->
@@ -60,240 +71,359 @@
     </div>
     <div class="tbl-content">
         <table cellpadding="0" cellspacing="0" border="0">
-            <tbody>
+            <tbody class="tb">
             <tr>
-                <td>Danny</td>
-                <td>05133065</td>
-                <td>Pussy</td>
-                <td>Sales</td>
-                <td>Day: 09:00~16:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
-                <td>AAD</td>
-                <td>AUSENCO</td>
-                <td>$2.38</td>
-                <td>-0.01</td>
-                <td>-1.36%</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
-                <td>AAX</td>
-                <td>ADELAIDE</td>
-                <td>$3.22</td>
-                <td>+0.01</td>
-                <td>+1.36%</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
-                <td>XXD</td>
-                <td>ADITYA BIRLA</td>
-                <td>$1.02</td>
-                <td>-1.01</td>
-                <td>+2.36%</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
-                <td>AAC</td>
-                <td>AUSTRALIAN COMPANY</td>
-                <td>$1.38</td>
-                <td>+2.01</td>
-                <td>-0.36%</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
-<!--            <tr>-->
-<!--                <td>AAD</td>-->
-<!--                <td>AUSENCO</td>-->
-<!--                <td>$2.38</td>-->
-<!--                <td>-0.01</td>-->
-<!--                <td>-1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAX</td>-->
-<!--                <td>ADELAIDE</td>-->
-<!--                <td>$3.22</td>-->
-<!--                <td>+0.01</td>-->
-<!--                <td>+1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>XXD</td>-->
-<!--                <td>ADITYA BIRLA</td>-->
-<!--                <td>$1.02</td>-->
-<!--                <td>-1.01</td>-->
-<!--                <td>+2.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAC</td>-->
-<!--                <td>AUSTRALIAN COMPANY</td>-->
-<!--                <td>$1.38</td>-->
-<!--                <td>+2.01</td>-->
-<!--                <td>-0.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAD</td>-->
-<!--                <td>AUSENCO</td>-->
-<!--                <td>$2.38</td>-->
-<!--                <td>-0.01</td>-->
-<!--                <td>-1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAX</td>-->
-<!--                <td>ADELAIDE</td>-->
-<!--                <td>$3.22</td>-->
-<!--                <td>+0.01</td>-->
-<!--                <td>+1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>XXD</td>-->
-<!--                <td>ADITYA BIRLA</td>-->
-<!--                <td>$1.02</td>-->
-<!--                <td>-1.01</td>-->
-<!--                <td>+2.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAC</td>-->
-<!--                <td>AUSTRALIAN COMPANY</td>-->
-<!--                <td>$1.38</td>-->
-<!--                <td>+2.01</td>-->
-<!--                <td>-0.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAD</td>-->
-<!--                <td>AUSENCO</td>-->
-<!--                <td>$2.38</td>-->
-<!--                <td>-0.01</td>-->
-<!--                <td>-1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAX</td>-->
-<!--                <td>ADELAIDE</td>-->
-<!--                <td>$3.22</td>-->
-<!--                <td>+0.01</td>-->
-<!--                <td>+1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>XXD</td>-->
-<!--                <td>ADITYA BIRLA</td>-->
-<!--                <td>$1.02</td>-->
-<!--                <td>-1.01</td>-->
-<!--                <td>+2.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAC</td>-->
-<!--                <td>AUSTRALIAN COMPANY</td>-->
-<!--                <td>$1.38</td>-->
-<!--                <td>+2.01</td>-->
-<!--                <td>-0.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAD</td>-->
-<!--                <td>AUSENCO</td>-->
-<!--                <td>$2.38</td>-->
-<!--                <td>-0.01</td>-->
-<!--                <td>-1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAX</td>-->
-<!--                <td>ADELAIDE</td>-->
-<!--                <td>$3.22</td>-->
-<!--                <td>+0.01</td>-->
-<!--                <td>+1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>XXD</td>-->
-<!--                <td>ADITYA BIRLA</td>-->
-<!--                <td>$1.02</td>-->
-<!--                <td>-1.01</td>-->
-<!--                <td>+2.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAC</td>-->
-<!--                <td>AUSTRALIAN COMPANY</td>-->
-<!--                <td>$1.38</td>-->
-<!--                <td>+2.01</td>-->
-<!--                <td>-0.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAD</td>-->
-<!--                <td>AUSENCO</td>-->
-<!--                <td>$2.38</td>-->
-<!--                <td>-0.01</td>-->
-<!--                <td>-1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAX</td>-->
-<!--                <td>ADELAIDE</td>-->
-<!--                <td>$3.22</td>-->
-<!--                <td>+0.01</td>-->
-<!--                <td>+1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>XXD</td>-->
-<!--                <td>ADITYA BIRLA</td>-->
-<!--                <td>$1.02</td>-->
-<!--                <td>-1.01</td>-->
-<!--                <td>+2.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAC</td>-->
-<!--                <td>AUSTRALIAN COMPANY</td>-->
-<!--                <td>$1.38</td>-->
-<!--                <td>+2.01</td>-->
-<!--                <td>-0.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAD</td>-->
-<!--                <td>AUSENCO</td>-->
-<!--                <td>$2.38</td>-->
-<!--                <td>-0.01</td>-->
-<!--                <td>-1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAX</td>-->
-<!--                <td>ADELAIDE</td>-->
-<!--                <td>$3.22</td>-->
-<!--                <td>+0.01</td>-->
-<!--                <td>+1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>XXD</td>-->
-<!--                <td>ADITYA BIRLA</td>-->
-<!--                <td>$1.02</td>-->
-<!--                <td>-1.01</td>-->
-<!--                <td>+2.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAC</td>-->
-<!--                <td>AUSTRALIAN COMPANY</td>-->
-<!--                <td>$1.38</td>-->
-<!--                <td>+2.01</td>-->
-<!--                <td>-0.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAD</td>-->
-<!--                <td>AUSENCO</td>-->
-<!--                <td>$2.38</td>-->
-<!--                <td>-0.01</td>-->
-<!--                <td>-1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>AAX</td>-->
-<!--                <td>ADELAIDE</td>-->
-<!--                <td>$3.22</td>-->
-<!--                <td>+0.01</td>-->
-<!--                <td>+1.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>XXD</td>-->
-<!--                <td>ADITYA BIRLA</td>-->
-<!--                <td>$1.02</td>-->
-<!--                <td>-1.01</td>-->
-<!--                <td>+2.36%</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>Danny</td>-->
-<!--                <td>05133065</td>-->
-<!--                <td>Pussy</td>-->
-<!--                <td>Sales</td>-->
-<!--                <td>Day: 09:00~16:00</td>-->
-<!--            </tr>-->
+
+            <!--            <tr>-->
+            <!--                <td>AAD</td>-->
+            <!--                <td>AUSENCO</td>-->
+            <!--                <td>$2.38</td>-->
+            <!--                <td>-0.01</td>-->
+            <!--                <td>-1.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>AAX</td>-->
+            <!--                <td>ADELAIDE</td>-->
+            <!--                <td>$3.22</td>-->
+            <!--                <td>+0.01</td>-->
+            <!--                <td>+1.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>XXD</td>-->
+            <!--                <td>ADITYA BIRLA</td>-->
+            <!--                <td>$1.02</td>-->
+            <!--                <td>-1.01</td>-->
+            <!--                <td>+2.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>AAC</td>-->
+            <!--                <td>AUSTRALIAN COMPANY</td>-->
+            <!--                <td>$1.38</td>-->
+            <!--                <td>+2.01</td>-->
+            <!--                <td>-0.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>AAD</td>-->
+            <!--                <td>AUSENCO</td>-->
+            <!--                <td>$2.38</td>-->
+            <!--                <td>-0.01</td>-->
+            <!--                <td>-1.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>AAX</td>-->
+            <!--                <td>ADELAIDE</td>-->
+            <!--                <td>$3.22</td>-->
+            <!--                <td>+0.01</td>-->
+            <!--                <td>+1.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>XXD</td>-->
+            <!--                <td>ADITYA BIRLA</td>-->
+            <!--                <td>$1.02</td>-->
+            <!--                <td>-1.01</td>-->
+            <!--                <td>+2.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>AAC</td>-->
+            <!--                <td>AUSTRALIAN COMPANY</td>-->
+            <!--                <td>$1.38</td>-->
+            <!--                <td>+2.01</td>-->
+            <!--                <td>-0.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>AAD</td>-->
+            <!--                <td>AUSENCO</td>-->
+            <!--                <td>$2.38</td>-->
+            <!--                <td>-0.01</td>-->
+            <!--                <td>-1.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>AAX</td>-->
+            <!--                <td>ADELAIDE</td>-->
+            <!--                <td>$3.22</td>-->
+            <!--                <td>+0.01</td>-->
+            <!--                <td>+1.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>XXD</td>-->
+            <!--                <td>ADITYA BIRLA</td>-->
+            <!--                <td>$1.02</td>-->
+            <!--                <td>-1.01</td>-->
+            <!--                <td>+2.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>AAC</td>-->
+            <!--                <td>AUSTRALIAN COMPANY</td>-->
+            <!--                <td>$1.38</td>-->
+            <!--                <td>+2.01</td>-->
+            <!--                <td>-0.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>AAD</td>-->
+            <!--                <td>AUSENCO</td>-->
+            <!--                <td>$2.38</td>-->
+            <!--                <td>-0.01</td>-->
+            <!--                <td>-1.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>AAX</td>-->
+            <!--                <td>ADELAIDE</td>-->
+            <!--                <td>$3.22</td>-->
+            <!--                <td>+0.01</td>-->
+            <!--                <td>+1.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>XXD</td>-->
+            <!--                <td>ADITYA BIRLA</td>-->
+            <!--                <td>$1.02</td>-->
+            <!--                <td>-1.01</td>-->
+            <!--                <td>+2.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>AAC</td>-->
+            <!--                <td>AUSTRALIAN COMPANY</td>-->
+            <!--                <td>$1.38</td>-->
+            <!--                <td>+2.01</td>-->
+            <!--                <td>-0.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>AAD</td>-->
+            <!--                <td>AUSENCO</td>-->
+            <!--                <td>$2.38</td>-->
+            <!--                <td>-0.01</td>-->
+            <!--                <td>-1.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>AAX</td>-->
+            <!--                <td>ADELAIDE</td>-->
+            <!--                <td>$3.22</td>-->
+            <!--                <td>+0.01</td>-->
+            <!--                <td>+1.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>XXD</td>-->
+            <!--                <td>ADITYA BIRLA</td>-->
+            <!--                <td>$1.02</td>-->
+            <!--                <td>-1.01</td>-->
+            <!--                <td>+2.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>AAC</td>-->
+            <!--                <td>AUSTRALIAN COMPANY</td>-->
+            <!--                <td>$1.38</td>-->
+            <!--                <td>+2.01</td>-->
+            <!--                <td>-0.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>AAD</td>-->
+            <!--                <td>AUSENCO</td>-->
+            <!--                <td>$2.38</td>-->
+            <!--                <td>-0.01</td>-->
+            <!--                <td>-1.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>AAX</td>-->
+            <!--                <td>ADELAIDE</td>-->
+            <!--                <td>$3.22</td>-->
+            <!--                <td>+0.01</td>-->
+            <!--                <td>+1.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>XXD</td>-->
+            <!--                <td>ADITYA BIRLA</td>-->
+            <!--                <td>$1.02</td>-->
+            <!--                <td>-1.01</td>-->
+            <!--                <td>+2.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>AAC</td>-->
+            <!--                <td>AUSTRALIAN COMPANY</td>-->
+            <!--                <td>$1.38</td>-->
+            <!--                <td>+2.01</td>-->
+            <!--                <td>-0.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>AAD</td>-->
+            <!--                <td>AUSENCO</td>-->
+            <!--                <td>$2.38</td>-->
+            <!--                <td>-0.01</td>-->
+            <!--                <td>-1.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>AAX</td>-->
+            <!--                <td>ADELAIDE</td>-->
+            <!--                <td>$3.22</td>-->
+            <!--                <td>+0.01</td>-->
+            <!--                <td>+1.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>XXD</td>-->
+            <!--                <td>ADITYA BIRLA</td>-->
+            <!--                <td>$1.02</td>-->
+            <!--                <td>-1.01</td>-->
+            <!--                <td>+2.36%</td>-->
+            <!--            </tr>-->
+            <!--            <tr>-->
+            <!--                <td>Danny</td>-->
+            <!--                <td>05133065</td>-->
+            <!--                <td>Pussy</td>-->
+            <!--                <td>Sales</td>-->
+            <!--                <td>Day: 09:00~16:00</td>-->
+            <!--            </tr>-->
             </tbody>
         </table>
     </div>
 </section>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyCD7ojpK8QMjhv454dGgCJv6uNfFLfXjnE",
+        authDomain: "specialstudy-crkteam.firebaseapp.com",
+        databaseURL: "https://specialstudy-crkteam.firebaseio.com",
+        projectId: "specialstudy-crkteam",
+        storageBucket: "specialstudy-crkteam.appspot.com",
+        messagingSenderId: "1020739373175",
+        appId: "1:1020739373175:web:07a99058ea6d80ec7c1e72",
+        measurementId: "G-4VW0XTMFD5"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    var db = firebase.database();
+
+    var table = document.getElementsByClassName("tb")[0];
+
+    var nodeCount = 0;
+    var length = table.childElementCount;
+    var names = new Array(length);
+    var ids = new Array(length);
+    var sexes = new Array(length);
+    var departments = new Array(length);
+    var workingType = new Array(length);
+
+
+    firebase.database().ref('/Employee').once('value').then(function (snapshot) {
+        snapshot.forEach(function (element) {
+            var trNode = table.getElementsByTagName("tr")[nodeCount];
+
+            names[nodeCount] = element.child("Name").val();
+            ids[nodeCount] = element.child("Id").val();
+            sexes[nodeCount] = element.child("Sex").val();
+            departments[nodeCount] = element.child("Department").val();
+            workingType[nodeCount] = element.child("WorkingType").val();
+
+
+            trNode.getElementsByTagName("td")[0].innerHTML = names[nodeCount];
+            trNode.getElementsByTagName("td")[1].innerHTML = ids[nodeCount];
+            trNode.getElementsByTagName("td")[2].innerHTML = sexes[nodeCount];
+            trNode.getElementsByTagName("td")[3].innerHTML = departments[nodeCount];
+            if (workingType[nodeCount] === 0)
+                trNode.getElementsByTagName("td")[4].innerHTML = "Day: 09:00~16:00";
+            if (workingType[nodeCount] === 1)
+                trNode.getElementsByTagName("td")[4].innerHTML = "Night: 17:00~23:00";
+
+            nodeCount++;
+        })
+    });
+
+    function search() {
+
+        var matchCount = new Array(length);
+        var table = document.getElementsByClassName("tb")[0];
+        var d = document.getElementsByClassName("departmentSelect")[0].value;
+        var s = document.getElementsByClassName("sexesSelect")[0].value;
+        var w = document.getElementsByClassName("workingHoursSelect")[0].value;
+        var m = 0;
+
+        Init();
+
+        for (var i = 0; i < nodeCount + 1; i++) {
+            if (d !== "") {
+                if (departments[i] !== d)
+                    continue;
+            }
+            if (s !== "") {
+                if (sexes[i] !== s)
+                    continue;
+            }
+            if (w !== "") {
+                if (w === "Day: 09:00~16:00") {
+                    w = 0;
+                }
+                if (w === "Night: 17:00~23:00") {
+                    w = 1;
+                }
+                if (workingType[i] !== w)
+                    continue;
+            }
+
+            matchCount[m] = i;
+            m++;
+
+        }
+        for (var i = 0; i < matchCount.length; i++) {
+            var trNode = table.getElementsByTagName("tr")[i];
+            if (matchCount[i] === undefined || names[matchCount[i]] === undefined) {
+                return;
+            }
+            trNode.getElementsByTagName("td")[0].innerHTML = names[matchCount[i]];
+            trNode.getElementsByTagName("td")[1].innerHTML = ids[matchCount[i]];
+            trNode.getElementsByTagName("td")[2].innerHTML = sexes[matchCount[i]];
+            trNode.getElementsByTagName("td")[3].innerHTML = departments[matchCount[i]];
+            if (workingType[i] === 0)
+                trNode.getElementsByTagName("td")[4].innerHTML = "Day: 09:00~16:00";
+            if (workingType[i] === 1)
+                trNode.getElementsByTagName("td")[4].innerHTML = "Night: 17:00~23:00";
+        }
+    }
+
+    function Init() {
+        for (var i = 0; i < nodeCount + 1; i++) {
+            var trNode = table.getElementsByTagName("tr")[i];
+
+            trNode.getElementsByTagName("td")[0].innerHTML = null;
+            trNode.getElementsByTagName("td")[1].innerHTML = null;
+            trNode.getElementsByTagName("td")[2].innerHTML = null;
+            trNode.getElementsByTagName("td")[3].innerHTML = null;
+            trNode.getElementsByTagName("td")[4].innerHTML = null;
+
+        }
+    }
+</script>
+
 

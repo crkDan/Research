@@ -15,6 +15,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Research" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -39,6 +41,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577642199931</updated>
       <workItem from="1577642202476" duration="39000" />
+      <workItem from="1577970166772" duration="113000" />
     </task>
     <servers />
   </component>
@@ -50,7 +53,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
