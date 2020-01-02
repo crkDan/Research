@@ -86,16 +86,28 @@ section{
 .sexesSelect{
     position: absolute;
     top: -10px;
-    left: 690px;
+    left: 385px;
 }
 .departmentSelect{
     position: absolute;
     top: -10px;
-    left: 940px;
+    left: 645px;
 }
 .workingHoursSelect{
     position: absolute;
     top: -10px;
+    left: 885px;
+}
+/*.Name_text{*/
+/*    position: absolute;*/
+/*    left: 85px;*/
+/*}*/
+/*.ID_text{*/
+/*    position: absolute;*/
+/*    left: 395px;*/
+/*}*/
+.Gender_text{
+=======
     left: 1190px;
 }
 .Name_text{
@@ -108,19 +120,19 @@ section{
 }
 .Sexes_text{
     position: absolute;
-    left: 630px;
+    left: 325px;
 }
 .Department_text{
     position: absolute;
-    left: 850px;
+    left: 550px;
 }
 .WorkingHours_text{
     position: absolute;
-    left: 1080px;
+    left: 775px;
 }
 .EmpSearch{
     position: absolute;
-    left: 1430px;
+    left: 1180px;
     background-position:
             calc(100% - 20px) calc(1em + 2px),
             calc(100% - 15px) calc(1em + 2px),
@@ -131,7 +143,7 @@ section{
             2.5em 2.5em;
     background-repeat: no-repeat;
 }
-select {
+select{
 
     /* styling */
     background-color: white;
@@ -186,6 +198,23 @@ select.departmentSelect {
             2.5em 2.5em;
     background-repeat: no-repeat;
 }
+
+select.workingHours {
+     position: absolute;
+     background-image:
+             linear-gradient(45deg, transparent 50%, blue 50%),
+             linear-gradient(135deg, blue 50%, transparent 50%),
+             linear-gradient(to right, skyblue, skyblue);
+     background-position:
+             calc(100% - 20px) calc(1em + 2px),
+             calc(100% - 15px) calc(1em + 2px),
+             100% 0;
+     background-size:
+             5px 5px,
+             5px 5px,
+             2.5em 2.5em;
+     background-repeat: no-repeat;
+ }
 
 select.workingHoursSelect {
     position: absolute;
