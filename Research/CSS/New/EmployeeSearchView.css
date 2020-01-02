@@ -83,17 +83,17 @@ section{
     -webkit-border-radius: 3px 0 0 3px;
     border-radius: 3px 0 0 3px;
 }
-.gender{
+.sexesSelect{
     position: absolute;
     top: -10px;
     left: 690px;
 }
-.department{
+.departmentSelect{
     position: absolute;
     top: -10px;
     left: 940px;
 }
-.workingHours{
+.workingHoursSelect{
     position: absolute;
     top: -10px;
     left: 1190px;
@@ -106,7 +106,7 @@ section{
     position: absolute;
     left: 395px;
 }
-.Gender_text{
+.Sexes_text{
     position: absolute;
     left: 630px;
 }
@@ -155,7 +155,7 @@ select {
 
 /* arrows */
 
-select.gender {
+select.sexesSelect {
     background-image:
             linear-gradient(45deg, transparent 50%, blue 50%),
             linear-gradient(135deg, blue 50%, transparent 50%),
@@ -171,7 +171,7 @@ select.gender {
     background-repeat: no-repeat;
 }
 
-select.department {
+select.departmentSelect {
     background-image:
             linear-gradient(45deg, transparent 50%, blue 50%),
             linear-gradient(135deg, blue 50%, transparent 50%),
@@ -187,7 +187,7 @@ select.department {
     background-repeat: no-repeat;
 }
 
-select.workingHours {
+select.workingHoursSelect {
     position: absolute;
     background-image:
             linear-gradient(45deg, transparent 50%, blue 50%),
