@@ -93,7 +93,7 @@
                 <p>File:</p>
             </td>
             <td>
-                <input type="file" value="file">
+                <input type="file" value="file" id ="file">
             </td>
         </tr>
 
@@ -195,6 +195,7 @@
             Sex: bufferSex,
             WorkingType: employeeWorkingTypes[0].selectedIndex
         });
+        console.log("text")
         db.ref('/Status/' + date + "/" + bufferId).set(0);
     }
 </script>

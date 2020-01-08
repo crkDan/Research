@@ -132,7 +132,7 @@
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     var db = firebase.database();
-    var date = '2019-12-31';//測試當天要改
+    var date = '2020-01-09';//測試當天要改
     var ids = [];
     var statuss = [];
     var a = [3];
@@ -149,6 +149,7 @@
             trNode.getElementsByTagName("td")[0].innerHTML = date;
             trNode.getElementsByTagName("td")[1].innerHTML = ids[i];
             trNode.getElementsByTagName("td")[2].innerHTML = statuss[i];
+            //要改
         }
     });
 
