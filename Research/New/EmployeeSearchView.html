@@ -381,8 +381,7 @@
     var sexes = new Array(length);
     var departments = new Array(length);
     var workingType = new Array(length);
-    var imageEmployees= document.getElementsByClassName("EmpImg");
-
+    var imageEmployees = document.getElementsByClassName("EmpImg");
 
 
     firebase.database().ref('/Employee').once('value').then(function (snapshot) {
@@ -394,7 +393,7 @@
             sexes[nodeCount] = element.child("Sex").val();
             departments[nodeCount] = element.child("Department").val();
             workingType[nodeCount] = element.child("WorkingType").val();
-            imageEmployees[nodeCount].src=("https://qwe0975279755-2.s3-ap-northeast-1.amazonaws.com/"+ids[nodeCount]+".png");
+            imageEmployees[nodeCount].src = ("https://qwe0975279755-2.s3-ap-northeast-1.amazonaws.com/" + ids[nodeCount] + ".png");
 
 
             trNode.getElementsByTagName("td")[0].innerHTML = names[nodeCount];
@@ -448,19 +447,17 @@
 
         for (var i = 0; i < matchCount.length; i++) {
             var trNode = table.getElementsByTagName("tr")[i];
-            console.log(matchCount[i]+"++++"+names[matchCount[i]]);
+            console.log(matchCount[i] + "++++" + names[matchCount[i]]);
 
             if (matchCount[i] === undefined || names[matchCount[i]] === undefined) {
                 return;
             }
-            console.log("00020");
-
 
             trNode.getElementsByTagName("td")[0].innerHTML = names[matchCount[i]];
             trNode.getElementsByTagName("td")[1].innerHTML = ids[matchCount[i]];
             trNode.getElementsByTagName("td")[2].innerHTML = sexes[matchCount[i]];
             trNode.getElementsByTagName("td")[3].innerHTML = departments[matchCount[i]];
-            imageEmployees[matchCount].src=("https://qwe0975279755-2.s3-ap-northeast-1.amazonaws.com/"+ids[matchCount]+".png");
+            imageEmployees[i].src = ("https://qwe0975279755-2.s3-ap-northeast-1.amazonaws.com/" + ids[matchCount[i]] + ".png");
             if (workingType[i] === 0)
                 trNode.getElementsByTagName("td")[4].innerHTML = "Day: 09:00~16:00";
             if (workingType[i] === 1)
@@ -479,8 +476,7 @@
             trNode.getElementsByTagName("td")[2].innerHTML = null;
             trNode.getElementsByTagName("td")[3].innerHTML = null;
             trNode.getElementsByTagName("td")[4].innerHTML = null;
-            // imageEmployees[nodeCount].src=null;
-
+            imageEmployees[i].src = "";
         }
     }
 </script>

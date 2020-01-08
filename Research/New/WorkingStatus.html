@@ -137,7 +137,7 @@
     var statuss = [];
     var a = [3];
     var table = document.getElementsByClassName("tb")[0];
-
+    var buffer ;
 
     firebase.database().ref('/Status/' + date).once('value').then(function (snapshot) {
         snapshot.forEach(function (item) {
@@ -148,8 +148,18 @@
             var trNode = table.getElementsByTagName("tr")[i];
             trNode.getElementsByTagName("td")[0].innerHTML = date;
             trNode.getElementsByTagName("td")[1].innerHTML = ids[i];
-            trNode.getElementsByTagName("td")[2].innerHTML = statuss[i];
-            //要改
+            buffer = statuss[i];
+            switch (buffer) {
+                case -1 :
+                    trNode.getElementsByTagName("td")[2].innerHTML ="Take leave";
+                    break;
+                case 0 :
+                    trNode.getElementsByTagName("td")[2].innerHTML ="not comming";
+                    break;
+                case 1 :
+                    trNode.getElementsByTagName("td")[2].innerHTML ="on time";
+                    break;
+            }
         }
     });
 
