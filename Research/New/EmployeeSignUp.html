@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../CSS/New/DropDownMenu.css">
 </head>
 <body>
-
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.596.0.min.js"></script>
 
 <form>
     <nav class="Dropdown_Menu_01">
@@ -16,9 +16,9 @@
             <li><a href="EmployeeSignUp.html">EmployeeSignUp</a></li>
             <li><a href="EmployeeSearchView.html">EmployeeSearch</a></li>
             <li><a href="SnapshotRecords.html">SnapshotRecords</a>
-<!--                <ul id="submenu">-->
-<!--                    <li><a href="#">WorkingRecords</a></li>-->
-<!--                </ul>-->
+                <!--                <ul id="submenu">-->
+                <!--                    <li><a href="#">WorkingRecords</a></li>-->
+                <!--                </ul>-->
             </li>
             <li><a href="AbsentForm.html">AbsentsForm</a></li>
             <li><a href="WorkingStatus.html">WorkingStatus</a></li>
@@ -112,6 +112,11 @@
 <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
 <script>
+    // 初始化 Amazon Cognito 登入資料供應商
+    AWS.config.region = 'ap-northeast-1'; // 區域
+    AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+        IdentityPoolId: 'ap-northeast-1:6257b3f2-7b5e-4c3f-804c-fc0f470b3645',
+    });
 
     var names = document.getElementsByClassName("employeeName");
     var ids = document.getElementsByClassName("employeeId");
@@ -134,6 +139,7 @@
     firebase.initializeApp(firebaseConfig);
     var db = firebase.database();
     var date = "2020-01-09";
+
     function signUp() {
         var bufferSex = "";
         var bufferNames = names[0].value;
@@ -158,6 +164,29 @@
             return;
         }
 
+        let file = document.getElementById('file');
+        s3 = new AWS.S3;
+        var params = {Bucket: 'qwe0975279755-2', Key: bufferId + '.png', Body: file.files[0], ACL: 'public-read'};
+        s3.upload(params, function (err, data) {
+            console.log(err, data);
+            let rekognition = new AWS.Rekognition();
+            var params = {
+                CollectionId: "FFinal",
+                DetectionAttributes: [],
+                ExternalImageId: bufferId,
+                Image: {
+                    S3Object: {
+                        Bucket: "qwe0975279755-2",
+                        Name: bufferId + ".png"
+                    }
+                }
+            };
+            rekognition.indexFaces(params, function (err, data) {
+                if (err) console.log(err, err.stack); // an error occurred
+                else console.log(data);           // successful response
+            });
+        });
+
         db.ref('/Employee/' + ids[0].value).update({
 
             Department: employeeDepartments[0].value,
@@ -166,6 +195,6 @@
             Sex: bufferSex,
             WorkingType: employeeWorkingTypes[0].selectedIndex
         });
-        db.ref('/Status/'+date+"/"+bufferId).set(0);
+        db.ref('/Status/' + date + "/" + bufferId).set(0);
     }
 </script>
