@@ -139,7 +139,7 @@
     firebase.initializeApp(firebaseConfig);
     var db = firebase.database();
     var date = "2020-01-09";
-
+//註冊
     function signUp() {
         var bufferSex = "";
         var bufferNames = names[0].value;
@@ -195,7 +195,6 @@
             Sex: bufferSex,
             WorkingType: employeeWorkingTypes[0].selectedIndex
         });
-        console.log("text")
         db.ref('/Status/' + date + "/" + bufferId).set(0);
     }
 </script>

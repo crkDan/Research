@@ -138,7 +138,7 @@
     var a = [3];
     var table = document.getElementsByClassName("tb")[0];
     var buffer ;
-
+//顯示狀態
     firebase.database().ref('/Status/' + date).once('value').then(function (snapshot) {
         snapshot.forEach(function (item) {
             ids.push(item.key);

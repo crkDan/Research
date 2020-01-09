@@ -406,7 +406,7 @@
     var similaritys = [];
     var table = document.getElementsByClassName("tb")[0]; //53格
     var count = 0;
-
+//顯示紀錄
     firebase.database().ref('/Record/' + date).once('value').then(function (snapshot) {
         snapshot.forEach(function (element) {
             times.push(element.key);

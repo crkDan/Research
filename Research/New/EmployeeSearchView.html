@@ -383,7 +383,7 @@
     var workingType = new Array(length);
     var imageEmployees = document.getElementsByClassName("EmpImg");
 
-
+//顯示員工
     firebase.database().ref('/Employee').once('value').then(function (snapshot) {
         snapshot.forEach(function (element) {
             var trNode = table.getElementsByTagName("tr")[nodeCount];
@@ -419,7 +419,7 @@
         var m = 0;
 
         Init();
-
+//篩選 條件搜尋
         for (var i = 0; i < nodeCount + 1; i++) {
             if (d !== "") {
                 if (departments[i] !== d)
@@ -465,7 +465,7 @@
 
         }
     }
-
+//清空資料
     function Init() {
 
         for (var i = 0; i < nodeCount + 1; i++) {
